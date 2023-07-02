@@ -8,7 +8,9 @@
     <%= tweet.description %>
     </p>
     <a href="#" class="btn btn-primary">Editar</a>
-    <a href="#" class="btn btn-danger">Eliminar</a>
+    
+    <%= button_to "Eliminar", @tweet,class:"btn btn-danger" , method: :delete %>
+    </a>
 
     </div>
     <div class="card-footer text-body-secondary">

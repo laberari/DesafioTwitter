@@ -1,8 +1,21 @@
 <div id="<%= dom_id tweet %>">
-  <p>
-    <strong>Description:</strong>
+  <div class="card text-center">
+    <div class="card-header">
+    <%= tweet.username %>
+    </div>
+    <div class="card-body">
+    <p class="card-text">
     <%= tweet.description %>
-  </p>
+    </p>
+    <a href="#" class="btn btn-primary">Editar</a>
+    <a href="#" class="btn btn-danger">Eliminar</a>
+
+    </div>
+    <div class="card-footer text-body-secondary">
+    <%= tweet.updated_at%>
+    
+    </div>
+    </div>
 
   <p>
     <strong>Username:</strong>
